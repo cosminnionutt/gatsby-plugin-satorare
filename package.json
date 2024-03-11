@@ -1,0 +1,53 @@
+{
+  "name": "gatsby-plugin-satorare",
+  "version": "1.0.10",
+  "description": "Gatsby plugin that can dynamically generate OG images using JSX syntax for site and markdowns.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && mv ./dist/* . && rm -rf ./dist",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okaryo/gatsby-plugin-satorare.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "satori",
+    "ogp",
+    "open graph image",
+    "open graph",
+    "og image",
+    "og:image",
+    "social",
+    "card",
+    "image"
+  ],
+  "author": "okaryo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okaryo/gatsby-plugin-satorare/issues"
+  },
+  "homepage": "https://github.com/okaryo/gatsby-plugin-satorare#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.34.0",
+    "prettier": "2.8.4",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "satori": "^0.10.9",
+    "sharp": "^0.32.6",
+    "vm2": "^3.9.19"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^0.0.0",
+    "gatsby": "^5.0.0",
+    "gatsby-source-filesystem": "^5.0.0"
+  }
+}
